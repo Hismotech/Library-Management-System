@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="425.0" prefWidth="148.0" stylesheets="@../resources/darktheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toolbar.ToolBarController">
+   <children>
+      <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#loadAddMember" prefHeight="400.0" prefWidth="152.0" styleClass="toolbar-button" text="Add Member">
+         <graphic>
+            <MaterialDesignIconView glyphName="ACCOUNT_MULTIPLE_PLUS" size="30" wrappingWidth="32.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadAddBook" prefHeight="400.0" prefWidth="152.0" styleClass="toolbar-button" text="Add Books">
+         <graphic>
+            <MaterialIconView glyphName="LIBRARY_ADD" size="30" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="79.0" mnemonicParsing="false" onAction="#loadMemberTable" prefHeight="400.0" prefWidth="152.0" styleClass="toolbar-button" text="Member List">
+         <graphic>
+            <FontAwesomeIconView glyphName="USERS" size="30" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="148.0" mnemonicParsing="false" onAction="#loadBookTable" prefHeight="400.0" prefWidth="152.0" styleClass="toolbar-button" text="Book List">
+         <graphic>
+            <MaterialDesignIconView glyphName="LIBRARY_BOOKS" size="30" wrappingWidth="32.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="217.0" mnemonicParsing="false" onAction="#loadSettings" prefHeight="400.0" prefWidth="152.0" styleClass="toolbar-button" text="Settings">
+         <graphic>
+            <FontAwesomeIconView glyphName="GEAR" size="30" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

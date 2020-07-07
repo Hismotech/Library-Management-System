@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="271.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="settings.SettingsController">
+   <children>
+      <VBox prefHeight="177.0" prefWidth="264.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="bookDays" labelFloat="true" promptText="How Long Can a Member Borrow Book ?">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="finePerDay" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Fine Per Day">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="userName" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Username">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passWord" labelFloat="true" promptText="Password">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <HBox layoutX="14.0" layoutY="210.0" prefHeight="39.0" prefWidth="264.0" stylesheets="@../resources/common.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton onAction="#saveSettings" prefHeight="100.0" prefWidth="200.0" text="Save" />
+            <JFXButton onAction="#cancelSettings" prefHeight="100.0" prefWidth="200.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

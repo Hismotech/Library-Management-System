@@ -1,0 +1,105 @@
+{
+-fx-primary:#2A2E37;
+-fx-secondary:#FFFF8D;
+-fx-primarytext:#B2B2B2;
+-fx-red:#FF0000;
+-fx-blue: #1976D2;
+}
+
+.root{
+    -fx-background-color:-fx-primary;
+}
+
+.root-head{
+    -fx-background-color:-fx-primary;
+}
+.glyph-icon{
+    -fx-fill:-fx-primarytext;
+}
+.login-button{
+    -fx-text-fill:-fx-primarytext;
+    -fx-background-color:-fx-primary;
+    -fx-border-color:-fx-secondary;
+    -fx-border-radius:20px;
+    -fx-background-radius: 20px;
+}
+
+.login-button:hover{
+    -fx-border-color:-fx-secondary;
+    -fx-background-color:-fx-secondary;
+    -fx-text-fill:-fx-primary;
+}
+.text-field{
+    -fx-text-fill:-fx-primarytext;
+    -jfx-focus-color:-fx-secondary;
+}
+.wrong-credentials{
+    -jfx-unfocus-color:-fx-red;
+    -jfx-focus-color:-fx-red;
+}
+
+/* Main screen css styling starts here*/
+
+/* styling tabpane*/
+.tab {
+    -fx-pref-width:250px;
+    -fx-pref-height:40px;
+    -fx-background-color:-fx-primary;
+}
+.tab-header-background{
+    -fx-background-color:-fx-primary;
+}
+.menu-bar{
+    -fx-base:-fx-primary;
+    -fx-background-color:-fx-primary;
+}
+.context-menu{
+    -fx-background-color: derive(-fx-primary,20%);
+}
+/*Styling harmburger*/
+.jfx-hamburger-icon{
+    -fx-spacings:5px;
+}
+.jfx-hamburger-icon StackPane{
+    -fx-background-color:-fx-secondary;
+    -fx-background-radius:4px;
+}
+
+/* Stylin the toolBar*/
+.toolbar-button{
+    -fx-background-color:derive(-fx-primary,20%);
+    -fx-background-radius: 2px;
+}
+.toolbar-button:hover{
+    -fx-background-color:-fx-secondary;
+    -fx-text-fill:-fx-primary;
+}
+
+.toolbar-button:hover .glyph-icon{
+    -fx-fill:-fx-primary;
+}
+
+/* Styling text*/
+
+.main-text{
+    -fx-fill:-fx-secondary;
+    -fx-font-size:14px;
+    -fx-font-alignment:center;
+}
+.submission-container{
+    -fx-background-color: derive(-fx-primary,10%);
+}
+
+/*Styling Piechart*/
+.data0.pie-chart{
+     -fx-pie-color: -fx-secondary;
+     -fx-border-color: derive(-fx-secondary, -30%);
+ }
+.data1.pie-chart{
+    -fx-pie-color: derive(-fx-primary, 30%);
+    -fx-border-color: derive(-fx-primary, 30%);
+}
+.chart-pie-label
+{
+    -fx-fill : derive(-fx-secondary, -5%);
+}
